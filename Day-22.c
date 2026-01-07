@@ -3,7 +3,7 @@
 int main(){
 
 // First two maximum numbers in array
-int numbers [] = {14,12};
+int numbers [] = {13,14,12};
 int lengthOfArray = sizeof(numbers)/sizeof(numbers[0]);
 
 if(lengthOfArray<2){
@@ -19,6 +19,19 @@ if(numbers[1]>numbers[0]){
     first = numbers[0];
     second = numbers[1];
 }
+
+
+for(int index =2;index<lengthOfArray;index++){
+
+if(numbers[index]>first){
+    first = numbers[index];
+    second = first;
+}else if(numbers[index]>second && numbers[index] != first){
+    second = numbers[index];
+}
+
+}
+
 
 printf("Fast largest number is %d\n",first);
 printf("Second largest number is %d\n",second);
