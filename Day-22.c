@@ -119,7 +119,7 @@ for(int i = 0;i<n;i++){
 }
 
 int max = numbers[0];
-for(int i = 0;i<n;i++){
+for(int i = 1;i<n;i++){
 
 if(max<numbers[i]){
     max = numbers[i];
@@ -128,11 +128,11 @@ if(max<numbers[i]){
 }
 printf("Maximum Num is %d", max);
 
-
     
 
     return 0;
 }
+
 
 
 
