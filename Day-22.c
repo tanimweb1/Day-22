@@ -128,10 +128,35 @@ if(max<numbers[i]){
 }
 printf("Maximum Num is %d", max);
 
+
+
+        // Write a program that takes numbers and displays minimum
+
+    int numbers[100], n;
+    printf("How many Numbers : ");
+    scanf("%d", &n);
+    printf("Enter the numbers  : ");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &numbers[i]);
+    }
+
+    int min = numbers[0];
+    for (int i = 1; i < n; i++)
+    {
+        if (min > numbers[i])
+            ;
+        min = numbers[i];
+    }
+
+    printf("Minimum Number is %d", min);
+
+
     
 
     return 0;
 }
+
 
 
 
