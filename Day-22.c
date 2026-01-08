@@ -39,6 +39,24 @@ printf("Second largest number is %d\n",second);
 
 
 
+    
+   // First two maximum numbers in sorted array
+ int numbers []={10,20,30,40,50};
+
+ int lengthOfArray = sizeof(numbers)/sizeof(numbers[0]);
+
+ if(lengthOfArray<2){
+    printf("It's need must 2 numbers");
+ }
+
+int first = numbers[lengthOfArray-1];
+int second = numbers[lengthOfArray-2];
+
+printf("First number is %d\n", first);
+printf("Second number is %d\n", second); 
+
+    
 
     return 0;
 }
+
