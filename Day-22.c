@@ -69,11 +69,25 @@ printf(" Sum is %d\n", sum);
 printf("Avarage is %0.2f\n", (float)sum/5);
 
 
+    // Using scanf
+
+int marks [5];
+int sum = 0;
+printf("enter 5 numbers ");
+for(int i = 0; i<5;i++){
+    scanf("%d", &marks[i]);
+}
+
+for(int i = 0;i<5;i++){
+    sum = sum + marks [i];
+}
+printf("Sum is %d", sum);
 
     
 
     return 0;
 }
+
 
 
 
