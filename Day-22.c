@@ -103,10 +103,37 @@ for(int i = 0;i<n;i++){
 printf("Sum is %d\n", sum);
 printf("Avarage is %0.2f", (float)sum/n);
 
+
+
+
+
+    // Write a program that takes numbers and displays maximum
+
+int numbers[100],n;
+
+printf("How many numbers : ");
+scanf("%d", &n);
+printf("Enter the numbers : ");
+for(int i = 0;i<n;i++){
+    scanf("%d", &numbers[i]);
+}
+
+int max = numbers[0];
+for(int i = 0;i<n;i++){
+
+if(max<numbers[i]){
+    max = numbers[i];
+}
+
+}
+printf("Maximum Num is %d", max);
+
+
     
 
     return 0;
 }
+
 
 
 
