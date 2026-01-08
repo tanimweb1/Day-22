@@ -56,7 +56,6 @@ printf("First number is %d\n", first);
 printf("Second number is %d\n", second); 
 
 
-
     // loop in array 
 
 int marks[5] = {1,2,3,4,5};
@@ -66,9 +65,8 @@ for(int i = 0; i<5;i++){
     sum = sum + marks[i];
 }
 
-printf(" Sum is %d", sum);
-
-
+printf(" Sum is %d\n", sum);
+printf("Avarage is %0.2f\n", (float)sum/5);
 
 
 
@@ -76,5 +74,6 @@ printf(" Sum is %d", sum);
 
     return 0;
 }
+
 
 
