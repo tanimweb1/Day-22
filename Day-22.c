@@ -83,10 +83,31 @@ for(int i = 0;i<5;i++){
 }
 printf("Sum is %d", sum);
 
+
+
+
+    // user given n number and values of numbers to find their sum & avarage
+int numbers[100], sum=0,n;
+
+printf("How many numbers : ");
+scanf("%d", &n);
+printf("Enter the numbers : ");
+for(int i = 0;i<n;i++){
+    scanf("%d",&numbers[i]);
+}
+for(int i = 0;i<n;i++){
+    sum = sum + numbers[i];
+
+}
+
+printf("Sum is %d\n", sum);
+printf("Avarage is %0.2f", (float)sum/n);
+
     
 
     return 0;
 }
+
 
 
 
