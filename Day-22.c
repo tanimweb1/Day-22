@@ -152,10 +152,30 @@ printf("Maximum Num is %d", max);
     printf("Minimum Number is %d", min);
 
 
+
+    // Fibonacchi numnber
+int n, a[30];
+printf("How many Numbers : ");
+scanf("%d",&n);
+
+a[0] = 0;
+a[1] = 1;
+
+for(int i = 2;i<n;i++){
+    a[i] = a[i-1] + a[i-2];
+}
+
+for(int i = 0;i<n;i++){
+    printf("%d\n", a[i]);
+}
+
+
+
     
 
     return 0;
 }
+
 
 
 
